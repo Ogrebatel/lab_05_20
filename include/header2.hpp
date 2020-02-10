@@ -20,6 +20,10 @@ class stack_st {
               T tmp(value...);
               my_stack[count - 1] = tmp;
           }
+        ~stack(){
+        free(my_stack);
+        count = 0;
+    }
 
           void push(T&& value){
               ++count;
