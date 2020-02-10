@@ -20,7 +20,7 @@ class stack_st {
               T tmp(value...);
               my_stack[count - 1] = tmp;
           }
-        ~stack(){
+        ~stack_st(){
         free(my_stack);
         count = 0;
     }
