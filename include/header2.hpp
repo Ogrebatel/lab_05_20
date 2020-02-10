@@ -11,7 +11,7 @@ using std::endl;
 
 template <typename T>
 
-class stack_t {
+class stack_st {
     public:
               template <typename ... Args>
               void push_emplace(Args&&... value){

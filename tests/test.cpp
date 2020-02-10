@@ -31,8 +31,8 @@ TEST(stack, Text){
 }
 
 TEST(stack_t, Text){
-    stack_t<summ> test_summ;
-    stack_t<int> test;
+    stack_st<summ> test_summ;
+    stack_st<int> test;
     int a = 2, b = 3, c = 4;
     test_summ.push_emplace(1, 2, 3);
     test_summ.push_emplace(3, 4, 5);
