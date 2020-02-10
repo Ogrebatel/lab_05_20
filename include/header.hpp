@@ -22,7 +22,7 @@ public:
         ++count;
         my_stack = static_cast<T*>(realloc(my_stack, count * sizeof(T)));
         my_stack[count - 1] = value;
-        delete value;
+        //delete value;
     }
     void push(const T &value) {
         ++count;

@@ -25,7 +25,7 @@ class stack_t {
               ++count;
               my_stack = static_cast<T*>(realloc(my_stack, count * sizeof(T)));
               my_stack[count - 1] = value;
-              delete value;
+              //delete value;
           }
 
           const T& head() const{
