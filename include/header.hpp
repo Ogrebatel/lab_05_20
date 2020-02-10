@@ -15,7 +15,7 @@ class stack {
 public:
     stack() : count(0), my_stack(nullptr){}
     ~stack(){
-        delete my_stack;
+        free(my_stack);
         count = 0;
     }
     void push(T &&value) {
