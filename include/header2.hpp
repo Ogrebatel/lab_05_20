@@ -39,7 +39,7 @@ class stack_t {
           T pop() {
               if (count == 0) {
                   cout << "stack underflow" << endl;
-                  exit (-100);
+                  exit(-100);
               }
               T tmp = my_stack[count - 1];
               my_stack = static_cast<T*>(realloc(my_stack, count * sizeof(T)));
