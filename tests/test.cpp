@@ -31,7 +31,7 @@ TEST(stack, Text){
 }
 
 TEST(stack_t, Text){
-    stack<int> test;
+    stack_t<int> test;
     int a = 2, b = 3, c = 4;
     test.push_emplace(1,2,3);
     test.push(a);
