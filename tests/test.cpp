@@ -31,9 +31,11 @@ TEST(stack, Text){
 }
 
 TEST(stack_t, Text){
+	stack_t<summ> test_summ;
     stack_t<int> test;
     int a = 2, b = 3, c = 4;
-    test.push_emplace(1,2,3);
+    test_summ.push_emplace(1,2,3);
+	test_summ.push_emplace(3,4,5);
     test.push(a);
     test.push(b);
     test.push(c);
@@ -44,7 +46,8 @@ TEST(stack_t, Text){
 	EXPECT_EQ(test.pop(), 4);
 	EXPECT_EQ(test.pop(), 3);
 	EXPECT_EQ(test.pop(), 2);
-	EXPECT_EQ(test.pop(), 6);
+	EXPECT_EQ(test_summ.pop(), 12);
+	EXPECT_EQ(test_summ.pop(), 6);
 }
 
 int main(int argc, char **argv) {
