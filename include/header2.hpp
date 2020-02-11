@@ -6,6 +6,8 @@
 #include <cstdlib>
 #include <iostream>
 
+#define STACK_UNDERFLOW -2
+
 using std::cout;
 using std::endl;
 
@@ -35,7 +37,7 @@ class stack_st {
           const T& head() const{
               if (count == 0) {
                   cout << "stack underflow" << endl;
-                  exit(-2);
+                  exit(STACK_UNDERFLOW);
               }
               return my_stack[count - 1];
           }
@@ -43,7 +45,7 @@ class stack_st {
           T pop() {
               if (count == 0) {
                   cout << "stack underflow" << endl;
-                  exit(-2);
+                  exit(STACK_UNDERFLOW);
               }
               T tmp = my_stack[count - 1];
               my_stack = static_cast<T*>(realloc(my_stack, count * sizeof(T)));
